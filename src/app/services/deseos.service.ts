@@ -12,14 +12,20 @@ export class DeseosService {
     //const lista1 = new Lista('Recolectar piedras del infinito');
     //const lista2 = new Lista('Heroes a desaparecer');
     //this.listas.push(lista1, lista2);
-    //console.log(this.listas); 
     this.cargarStorage();
+    console.log(this.listas); 
   }
 
   crearLista(titulo : string){
     let nuevalista = new Lista(titulo);
     this.listas.push(nuevalista);
     this.guardarStorage();
+    return nuevalista.id;
+  }
+
+  cargarLista( id : string | number){
+    id = Number(id);
+    return this.listas.find( listaData => listaData.id === id );
   }
 
   cargarStorage(){
