@@ -7,6 +7,7 @@ import { ExploreContainerComponentModule } from '../../explore-container/explore
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 import { DeseosService } from 'src/app/services/deseos.service';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { DeseosService } from 'src/app/services/deseos.service';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab2PageRoutingModule
+    Tab2PageRoutingModule,
+    ComponentsModule
   ],
   declarations: [Tab2Page]
 })

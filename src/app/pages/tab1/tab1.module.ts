@@ -6,8 +6,7 @@ import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../../explore-container/explore-container.module';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
-import { DeseosService } from 'src/app/services/deseos.service';
-import { Lista } from 'src/app/models/lista.model';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
@@ -15,7 +14,8 @@ import { Lista } from 'src/app/models/lista.model';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab1PageRoutingModule
+    Tab1PageRoutingModule,
+    ComponentsModule
   ],
   declarations: [Tab1Page]
 })
